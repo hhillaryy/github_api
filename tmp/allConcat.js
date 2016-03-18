@@ -1,1 +1,1 @@
-// Hello dhfjkadhjfladjlsfka
+var apiKey = require('./../.env').apiKey;
