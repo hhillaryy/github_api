@@ -1,4 +1,4 @@
-# GitHUb API Repository Generator
+# GitHub API Repository Generator
 CSS week 4 code review (real repo)
 
 HTML, CSS, JavaScript and Sass exercise for Epicodus 3.18.2016
