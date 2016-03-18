@@ -1,10 +1,9 @@
 
 
 
-exports.User = function(repoName, description) {
+exports.User = function(repoName, repoDescription) {
   this.repoName = repoName;
-  this.description = description;
-
+  this.repoDescription = repoDescription;
 };
 
 // exports.repoInfo = function(user) {
