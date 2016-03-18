@@ -1,9 +1,9 @@
 {
-  "name": "nodetemplate",
+  "name": "github_api",
   "description": "",
   "main": "gulpfile.js",
   "authors": [
-    "Taylor Pokoj <pokojt@gmail.com>"
+    "Hillary Hintzen <hillary07@gmail.com>"
   ],
   "license": "ISC",
   "moduleType": [],
