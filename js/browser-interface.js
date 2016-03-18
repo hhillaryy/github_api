@@ -1,25 +1,17 @@
-var apiKey = require('./../.env').apiKey;
+// var apiKey = require('./../.env').apiKey;
 
+var apiKey = "d1762b6311f1ce21bbf63c4388c9b6579db68048";
 
 $(document).ready(function() {
  // event.preventDefault();
 $('#submit').click(function(){
-  var user =
-  // $('#bikeLoc').val('');
-  // $('#bikeColor').val('');
-    $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
-      console.log(response.public_repos);
-    $('#results').append("<h3>The user " + user + " 's repositories: b</h3>");
-
-    response.users.forEach(function(user){
-      users.push(new User(user.public_repos, user.description,
-        // need to find these json file name things somewhere for github
-    });
-
-    // bikes.forEach(function(bike) {
-    //   $('#results').append("<li>" + "Manufacturer: " + bikeToDisplay.manufacturer + ", " + "model: " + bikeToDisplay.model + ", " + bikeToDisplay.bikeLocation + ", " + "serial number: " + bikeToDisplay.serial + "</li>")
-    // });
-
+  var user = $('#userName').val();
+  $('#submit').empty();
+  $.get("https://api.github.com/users/" + user + "?access_token=" + apiKey).then(function(response){
+    console.log(response);
+  $('#results').append("These are " + user + " repositories:" + response.repos_url);
+}).fail(function(error){
+  $('#results').text(error.responseJSON.message);
   });
   });
 });
